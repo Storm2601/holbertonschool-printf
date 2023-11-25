@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
 * _printf - Its a printer with use functions
@@ -14,7 +15,7 @@ int _printf(const char *format, ...)
 		{'c', print_char},
 		{'s', print_string},
 		{'%', print_percent},
-		{NULL, NULL}
+		{'\0', NULL}
 	};
 	va_start(ap, format);
 	while (format && format[i])

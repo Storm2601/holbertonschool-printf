@@ -31,7 +31,7 @@ int print_string(va_list ap)
 
 	if (s == NULL)
 		s = "(null)";
-   
+
 	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
 	return (i);
@@ -81,10 +81,10 @@ int print_decimal(long int n, int count)
 
 int print_integers(__attribute__((unused)) va_list ap)
 {
-	long int n;
+        long int n;
 
-	n = va_arg(list, int);
-	if (n < 0)
-		return (print_decimal(n, 2));
-	return (print_decimal(n, 1));
+        n = va_arg(ap, int);
+        if (n < 0)
+                return (print_decimal(n, 2));
+        return (print_decimal(n, 1));
 }
