@@ -27,7 +27,7 @@ int _printf(const char *format, ...);
 int print_char(va_list ap);
 int print_string(va_list ap);
 int print_percent(__attribute__((unused)) va_list ap);
-int print_decimal(long int n, int count)
+int print_decimal(long int n, int count);
 int print_integers(va_list ap);
 
 
