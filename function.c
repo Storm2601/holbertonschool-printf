@@ -31,7 +31,8 @@ int print_string(va_list ap)
 
 	if (s == NULL)
 		s = "(null)";
-	for (i = 0; s[i] != "\0"; i++)
+   
+	for (i = 0; s[i] != '\0'; i++)
 		_putchar(s[i]);
 	return (i);
 }
@@ -54,6 +55,7 @@ int print_percent(__attribute__((unused)) va_list ap)
 * @count: digit counter
 * Return: return the digit counter
 */
+
 int print_decimal(long int n, int count)
 {
 	int digit = count;
@@ -65,7 +67,7 @@ int print_decimal(long int n, int count)
 	}
 	if (n / 10)
 	{
-		digit = print decimal(n / 10, count + 1);
+		digit = print_decimal(n / 10, count + 1);
 	}
 	_putchar(n % 10 + '0');
 	return (digit);
@@ -77,7 +79,7 @@ int print_decimal(long int n, int count)
 * Return: return the value
 */
 
-int print_integers(__attribute__((unused)) va_list ap);
+int print_integers(__attribute__((unused)) va_list ap)
 {
 	long int n;
 
