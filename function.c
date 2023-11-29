@@ -81,10 +81,10 @@ int print_decimal(long int n, int count)
 
 int print_integers(__attribute__((unused)) va_list ap)
 {
-        long int n;
+	long int n;
 
-        n = va_arg(ap, int);
-        if (n < 0)
-                return (print_decimal(n, 2));
-        return (print_decimal(n, 1));
+	n = va_arg(ap, int);
+	if (n < 0)
+		return (print_decimal(n, 2));
+	return (print_decimal(n, 1));
 }
