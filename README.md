@@ -6,5 +6,5 @@
 >
 >
 >
-> <embed-pdf url="./docs/diagrammeganttprintf.pdf">
+> <img src="https://github.com/Storm2601/holbertonschool-printf/blob/Goliath33/docs/diagrammeganttprintf.pdf" width="100%">
 
