@@ -6,5 +6,5 @@
 >
 >
 >
-> <img src="https://github.com/Storm2601/holbertonschool-printf/blob/Goliath33/docs/diagrammeganttprintf.pdf" width="100%">
+> [![Diagramme de Gantt](https://github.com/Storm2601/holbertonschool-printf/blob/Goliath33/docs/diagrammeganttprintf.pdf)]
 
