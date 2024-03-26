@@ -7,7 +7,7 @@ void _printf(const char *format, ...);
 //PROTOTYPE _putchar
 int _putchar(char c);
 
-//PROTOTYPE print_character
+//PROTOTYPE print_character and decimal_character
 int print_character(va_list ap);
 int print_string(va_list ap);
 int print_pourcentage(va_list ap);
