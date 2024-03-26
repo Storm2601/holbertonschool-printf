@@ -6,6 +6,13 @@
 #include <string.h>
 #include <stdlib.h>
 
+typedef struct choice
+{
+	char *str;
+	int (*func)(va_list);
+}
+choice;
+
 //PROTOTYPE _printf
 void _printf(const char *format, ...);
 
