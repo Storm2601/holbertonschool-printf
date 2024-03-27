@@ -13,16 +13,16 @@ typedef struct choice
 }
 choice;
 
-//PROTOTYPE _printf
+/* PROTOTYPE _printf */
 int _printf(const char *format, ...);
 
-//PROTOTYPE _printf syntax choice caractere
+/* PROTOTYPE _printf syntax choice caractere */
 void _syntaxprintf(const char *format, ...);
 
-//PROTOTYPE _putchar
+/* PROTOTYPE _putchar */
 int _putchar(char c);
 
-//PROTOTYPE print_character and decimal_character
+/* PROTOTYPE print_character and decimal_character */
 int print_character(va_list ap);
 int print_string(va_list ap);
 int print_pourcentage(va_list ap);

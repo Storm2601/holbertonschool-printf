@@ -60,10 +60,10 @@ int print_pourcentage(va_list ap)
 
 
 /**
- * print_integer - print an integer
- * @ap: va_list
- * Return: n
- */
+* print_integer - print an integer
+* @ap: va_list
+* Return: n
+*/
 
 
 int print_integer(va_list ap)
@@ -74,31 +74,4 @@ int print_integer(va_list ap)
 	num = va_arg(ap, int);
 	print_number(num, &n);
 	return (n);
-}
-
-
-/**
- * print_number - print number
- * @n: integer
- * @char_num: size for printf
- * Return: nothing
- */
-
-void print_number(int n, int *char_num)
-{
-	unsigned int num;
-
-	if (n < 0)
-	{
-		n *= -1;
-		*char_num += 1;
-		_putchar('-');
-	}
-	num = n;
-	if (num / 10)
-	{
-		print_number(num / 10, char_num);
-	}
-	*char_num += 1;
-	_putchar((num % 10) + '0');
 }
