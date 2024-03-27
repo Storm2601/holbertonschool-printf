@@ -14,7 +14,10 @@ typedef struct choice
 choice;
 
 //PROTOTYPE _printf
-void _printf(const char *format, ...);
+int _printf(const char *format, ...);
+
+//PROTOTYPE _printf syntax choice caractere
+void _syntaxprintf(const char *format, ...);
 
 //PROTOTYPE _putchar
 int _putchar(char c);
