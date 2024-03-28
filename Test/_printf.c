@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 			return (-1);
 		if (format[i] == '%')
 		{
-			f = syntaxe-printf(format[i + 1]);
+			f = get_print_func(format[i + 1]);
 
 			if (f != NULL)
 			{
