@@ -7,12 +7,14 @@
  * Return: number of characters printed
 */
 
-void _printf(const char *format, ...)
+void _syntaxprintf(const char *format, ...)
 {
+    char *p;
+
     va_list args;
     va_start(args, format);
-
-    for (const char *p = format; *p != '\0'; p++)
+    
+    for (*p = format; *p != '\0'; p++)
     {
         if (*p == '%')
         {

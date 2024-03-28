@@ -7,7 +7,7 @@
 * Return: nothing
 */
 
-void print_number(int n, int *char_num)
+int print_number(int n, int *char_num)
 {
 	unsigned int num;
 
