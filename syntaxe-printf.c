@@ -7,7 +7,7 @@
  * Return: number of characters printed
 */
 
-void _printf(const char *format, ...)
+void printf(const char *format, ...)
 {
     va_list args;
     va_start(args, format);
