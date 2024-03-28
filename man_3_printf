@@ -1,0 +1,54 @@
+.TH Man page 3 printf
+
+
+.SH NAME
+
+_printf
+
+
+.SH SYNOPSIS
+
+int _printf(const char *format, ...);
+
+
+.SH DESCRIPTION
+
+The function _printf print with specifiers format to the standars output.
+_printf is a copy to the standard function printf.
+
+
+.SH FORMAT SPECIFIERS
+
+The _printf takes the following options to format the output :
+
+%c
+Print a character.
+
+%s
+Print a string.
+
+%i
+Print a integer.
+
+%d
+Print a decimal number.
+
+%%
+Print just %.
+
+
+.SH EXAMPLES
+
+_printf("%c",'a'); --> "a".
+
+_printf("%s", "I love printf"); --> "I love printf".
+
+_printf("%i", 26); --> "26".
+
+_printf("%d", -13); --> "-13".
+
+
+.SH AUTHOR
+
+Guédon kévin
+David Sellier De Brugiere
