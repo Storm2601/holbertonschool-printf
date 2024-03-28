@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-* _printf - prints all
-* @format: list of type of arguments
-* Return: number of characters printed
-*/
+ * _printf - prints all
+ * @format: list of type of arguments
+ * Return: number of characters printed
+ */
 int _printf(const char *format, ...)
 {
 	int i = 0;
@@ -22,7 +22,9 @@ int _printf(const char *format, ...)
 			return (-1);
 		if (format[i] == '%')
 		{
-			f = get_print_func(format[i + 1]);
+			char fmt[3] = "% ";
+			fmt[1] = format[i + 1];
+			f = get_format_func(fmt);
 
 			if (f != NULL)
 			{
