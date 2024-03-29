@@ -9,11 +9,11 @@
 
 typedef struct choice
 {
-	char *str;
+	char letter;
 
-	int (*func)(va_list);
+	int (*f)(va_list ap);
 }
-choice;
+choice_c;
 
 /* PROTOTYPE _printf */
 int _printf(const char *format, ...);
@@ -30,5 +30,6 @@ int print_string(va_list ap);
 int print_pourcentage(va_list ap);
 int print_integer(va_list ap);
 int print_number(int n, int *char_num);
+int (*get_function(char s))(va_list);
 
 #endif

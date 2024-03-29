@@ -9,16 +9,15 @@
 
 int (*get_function(char s))(va_list)
 {
-	choice list[] = {
-	{'c', print_character},
-	{'s', print_string},
-	{'d', print_number},
-	{'i', print_integer},
-	{'%', print_pourcentage},
-	{'\0', NULL},
-};
-
 	int i = 0;
+
+	choice_c list[] =
+     {
+{'c', print_character},
+{'s', print_string},
+{'%', print_pourcentage},
+{'\0', NULL},
+     };
 
 	while (list[i].f != NULL)
 	{
@@ -30,4 +29,3 @@ int (*get_function(char s))(va_list)
 	}
 	return (NULL);
 }
-
