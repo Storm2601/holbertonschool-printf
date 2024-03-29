@@ -4,7 +4,7 @@
 * print_number - print number
 * @n: integer
 * @char_num: size for printf
-* Return: nothing
+* Return: number
 */
 
 int print_number(int n, int *char_num)
@@ -24,4 +24,5 @@ int print_number(int n, int *char_num)
 	}
 	*char_num += 1;
 	_putchar((num % 10) + '0');
+	return (num);
 }

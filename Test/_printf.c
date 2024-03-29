@@ -5,7 +5,6 @@
 * @format: list of type of arguments
 * Return: number of characters printed
 */
-
 int _printf(const char *format, ...)
 {
 	int i = 0;
@@ -23,7 +22,7 @@ int _printf(const char *format, ...)
 			return (-1);
 		if (format[i] == '%')
 		{
-			f = printf;
+			f = get_function(format[i + 1]);
 
 			if (f != NULL)
 			{
@@ -48,4 +47,3 @@ int _printf(const char *format, ...)
 	va_end(ap);
 	return (char_count);
 }
-

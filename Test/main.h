@@ -5,13 +5,15 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 typedef struct choice
 {
-	char *str;
-	int (*func)(va_list);
+	char letter;
+
+	int (*f)(va_list ap);
 }
-choice;
+choice_c;
 
 /* PROTOTYPE _printf */
 int _printf(const char *format, ...);
@@ -28,6 +30,6 @@ int print_string(va_list ap);
 int print_pourcentage(va_list ap);
 int print_integer(va_list ap);
 int print_number(int n, int *char_num);
-
+int (*get_function(char s))(va_list);
 
 #endif
