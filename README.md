@@ -6,7 +6,7 @@ this is a brief description for creating a printf function to print characters.
 
 ## :clipboard: Organisation by Diagram of Gantt
 
-<img src="https://github.com/Storm2601/holbertonschool-printf/blob/main/docs/diagrammeganttprintf.pdf">
+<img src="https://github.com/Storm2601/holbertonschool-printf/blob/main/images/diagrammedegantt.png" width="500">
 
 ## :construction: Flowchart
 
@@ -15,17 +15,17 @@ this is a brief description for creating a printf function to print characters.
 
 ## :loudspeaker: Exemple of coding Printf :
 
-> Some basic command are after compilation :
-```./printf
+> Some basic command ./printf are used after compilation :
+```
+./printf
 Let's try to printf a simple sentence.
 Let's try to printf a simple sentence.
-Length:[39, 39]
-Length:[39, 39]
-Negative:[-762534]
-Negative:[-762534]
-Unsigned:[2147484671]
-Unsigned:[2147484671]
-Unsigned octal:[20000001777]
+Character:[H]
+Character:[H]
+String:[I am a string !]
+String:[I am a string !]
+Percent:[%]
+Percent:[%]
 
 ```
 
