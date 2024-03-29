@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 			return (-1);
 		if (format[i] == '%')
 		{
-			f = printf void(const char *format[i + 1]);
+			f = get_function(format[i + 1]);
 
 			if (f != NULL)
 			{
@@ -46,4 +46,20 @@ int _printf(const char *format, ...)
 	}
 	va_end(ap);
 	return (char_count);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
