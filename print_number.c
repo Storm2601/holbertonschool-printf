@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* print_number - print number
-* @n: integer
-* @char_num: size for printf
-* Return: nothing
-*/
+ * print_number - print number
+ * @n: integer
+ * @char_num: size for printf
+ * Return: nothing
+ */
 
 void print_number(int n, int *char_num)
 {
