@@ -65,7 +65,6 @@ int print_pourcentage(va_list ap)
 * Return: n
 */
 
-
 int print_integer(va_list ap)
 {
 	int n = 0;
