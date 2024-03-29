@@ -16,6 +16,8 @@ int (*get_function(char s))(va_list)
 {'c', print_character},
 {'s', print_string},
 {'%', print_pourcentage},
+{'d', print_number},
+{'i', print_integer},
 {'\0', NULL},
      };
 
